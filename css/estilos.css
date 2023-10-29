@@ -1,0 +1,103 @@
+/*ESTILOS DEL ARCHIVO ENCABEZADO.PHP*/
+h1 {
+  width: 80%;
+  max-width: 1000px;
+  margin: 20px auto;  
+  background: #fff;
+  text-align: center;
+}
+nav > ul {
+  display: flex;
+  justify-content: center;
+}
+nav li {
+  margin: 0 5px;
+  padding: 5px;
+  text-align: center;
+  list-style: none;
+  display: inline-block;
+}
+.menu a {
+  text-decoration: none;
+  font-size: 30px;
+  color: #022799;
+}
+.menu a:hover {
+  color: #436ff9;
+  font-weight: bold;
+}
+/*ESTILOS DEL ARCHIVO INDEX.PHP*/
+body {
+  background-color: #90dfb3;
+}
+.Escuela {
+  width: 100%;
+  max-width: 1000px;
+  height: 300px;
+  margin: 0 auto;
+  background-color: #000;
+  background-image: url("../img/patioescuela\ .jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.form_registro {
+   max-width: 50%;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-gap: 10px;
+}
+
+/*ESTILOS DEL ARCHIVO REGISTRARSE.PHP */
+body.entrada{
+  margin: auto;
+  padding: 25px;
+  background-image: url("../img/entrada.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: auto;
+
+}
+.container {
+  max-width: 50%;
+  text-align: center;
+  margin: 20px auto;
+  justify-content: auto;
+}
+.form_registro label {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.form_registro input {
+  width: 50%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 2px solid #022799;
+}
+.form_registro input[type="submit"]{
+  grid-column: span 2;
+  width: 50%;
+  margin: auto;
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  color: #436FF9;
+  background-color: #022799 ;
+  border: 1.5px solid #fff;
+  border-radius: 5px;
+}
+.form_registro input[type="submit"]:hover{
+  color: #022799;
+  background-color:#436FF9;
+  cursor: pointer;  
+}
