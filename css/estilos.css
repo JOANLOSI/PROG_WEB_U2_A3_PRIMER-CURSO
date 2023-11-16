@@ -1,8 +1,27 @@
+/*ESTILOS GENERALES*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  background: #1b1d35;
+  color: #fff;
+}
+
 /*ESTILOS DEL ARCHIVO ENCABEZADO.PHP*/
+a {
+  text-decoration: none;
+  color: #b8711b;
+}
 h1 {
   width: 80%;
   max-width: 1000px;
-  margin: 20px auto;  
+  color: #436ff9;
+  margin: 20px auto;
   background: #fff;
   text-align: center;
 }
@@ -25,11 +44,9 @@ nav li {
 .menu a:hover {
   color: #436ff9;
   font-weight: bold;
+  text-decoration: underline;
 }
 /*ESTILOS DEL ARCHIVO INDEX.PHP*/
-body {
-  background-color: #90dfb3;
-}
 .Escuela {
   width: 100%;
   max-width: 1000px;
@@ -40,64 +57,133 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-.form_registro {
-   max-width: 50%;
-   margin: 0 auto;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   text-align: center;
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   grid-gap: 10px;
-}
 
-/*ESTILOS DEL ARCHIVO REGISTRARSE.PHP */
-body.entrada{
+/*ESTILOS DEL ARCHIVO REGISTRARSE.VIEW.PHP */
+body.entrada {
   margin: auto;
   padding: 25px;
   background-image: url("../img/entrada.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: auto;
-
+  height: auto; 
 }
 .container {
-  max-width: 50%;
+  max-width: 40%;
   text-align: center;
   margin: 20px auto;
   justify-content: auto;
+  background-color: aquamarine;
 }
-.form_registro label {
-  display: block;
+.container h1 {
+  background-color: aquamarine;
+}
+.formulario {
+  max-width: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+.formulario .cont_inputs {
+  text-align: center;
+  margin: 0;
+}
+.cont_inputs label {
+  /*display: block;*/
   font-size: 20px;
   font-weight: bold;
-  color: #000;
+  color: brown;
   text-align: center;
-  margin-bottom: 5px;
+  margin-bottom: 5px auto;
 }
-.form_registro input {
+.cont_inputs input {
   width: 50%;
   padding: 5px;
   margin-bottom: 10px;
   border: 2px solid #022799;
+  text-align: right;
 }
-.form_registro input[type="submit"]{
+input[type="submit"] {
   grid-column: span 2;
-  width: 50%;
+  width: 60%;
   margin: auto;
   display: block;
   font-size: 20px;
   font-weight: bold;
-  color: #436FF9;
-  background-color: #022799 ;
+  color: #436ff9;
+  background-color: #022799;
   border: 1.5px solid #fff;
   border-radius: 5px;
 }
-.form_registro input[type="submit"]:hover{
+.formulario .input-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.formulario .input-group label {
+  width: 50%;
+  font-size: 20px;
+  font-weight: bold;
+  color: brown;
+  text-align: left;
+  margin-right: 5px;
+}
+.formulario .input-group input {
+  width: 50%;
+  padding: 5px;
+  text-align: left;
+  border: 2px solid #022799;
+  justify-content: right;
+}
+.form_registro input[type="submit"]:hover {
   color: #022799;
-  background-color:#436FF9;
-  cursor: pointer;  
+  background-color: #436ff9;
+  cursor: pointer;
+}
+.error {
+  color: red;
+  font-weight: bold;
+}
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.campos-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.campo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.campo .icono {
+  padding: 4px;
+}
+
+.error-container {
+  margin-top: 10px;
+  font-size: 18px;
+}
+.campos-container input {
+  font-size: 18px;
+}
+
+.login {
+  width: 50%;
+  text-align: center;
 }
