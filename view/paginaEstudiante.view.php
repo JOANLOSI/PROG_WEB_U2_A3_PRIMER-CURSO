@@ -21,8 +21,7 @@ session_start();
       <nav class="menu">
          <ul>
             <li><a href="../index.php">INICIO</a></li>
-            <li><a href="#">CONSULTAR CALIFICACIÓN</a></li>
-            <li><a href="#">USUARIO</a></li>
+            <li><a href="../consultaEstudiante.php">CONSULTAR CALIFICACIÓN</a></li>
             <li><a href="../cerrar.php">CERRAR SESIÓN</a></li>
          </ul>
       </nav>

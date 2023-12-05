@@ -1,8 +1,7 @@
 <?php
 session_start();
 require("../conexion.php");
-//include("../encabezado.php");
-/*CREANDO VARIABLES Y ASIGNANDOLE VALORES DE ACUERDO AL NOMBRE DEL CAMPO EN QUE SE ESCRIBEN EN EL FORMULARIO*/
+
 $errores = '';
 if (isset($_GET["errores"])) {
    $errores = urldecode($_GET["errores"]);
@@ -34,6 +33,7 @@ if (isset($_GET["errores"])) {
          </ul>
       </nav>
    </div>
+   
    <div class="formulario">
       <form action="../procesar_registro.php" method="POST" class="formulario" name="login" id="login">
          <div class="campos-container">

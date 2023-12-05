@@ -3,6 +3,7 @@ session_start();
 ?>
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,26 +12,31 @@ session_start();
    <link rel="stylesheet" href="../css/estilos.css">
    <title>Página de Profesor</title>
    <style>
-.mensaje{font-size: 25px; text-align: center;}
+      .mensaje {
+         font-size: 25px;
+         text-align: center;
+      }
    </style>
 </head>
+
 <body>
-<div class="contenedor">
+   <div class="contenedor">
       <h1 class="titulo">ESCUELA PRIMARIA 6 DE DICIEMBRE DE 1810</h1>
       <hr class="border">
       <nav class="menu">
          <ul>
             <li><a href="../index.php">INICIO</a></li>
-            <li><a href="#">REGISTRAR CALIFICACIÓN</a></li>
-            <li><a href="#">CONSULTAR</a></li>
-            <li><a href="#">USUARIO</a></li>
+            <li><a href="registroCalificacion.view.php">REGISTRAR CALIFICACIÓN</a></li>
+            <li><a href="../consultaProfesor.php">CONSULTAR</a></li>
             <li><a href="../cerrar.php">CERRAR SESIÓN</a></li>
          </ul>
       </nav>
-   <h1>PAGINA PROFESOR</h1>
-   <div class="mensaje">
-   <?php
-   echo isset($_SESSION['nombre']) ? "Bienvenido ".ucfirst($_SESSION['nombre']) ." ingresaste como ¡PROFESOR!" : "Bienvenido, estudiante"; ?>
+      <h1>PAGINA PROFESOR</h1>
+      <div class="mensaje">
+         <?php
+         echo isset($_SESSION['nombre']) ? "Bienvenido " . ucfirst($_SESSION['nombre']) . " ingresaste como ¡PROFESOR!" : "Bienvenido, estudiante"; ?>
+      </div>
    </div>
 </body>
+
 </html>
